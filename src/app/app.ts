@@ -1,16 +1,17 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Navbar } from "./features/navbar/navbar";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Navbar],
   template: `
-    <h1>Hello, {{ title() }}</h1>
+    <app-navbar />
 
+  <div class="bg-dark text-light">
     <router-outlet />
   `,
   styles: [],
 })
 export class App {
-  protected readonly title = signal('andrea-giuseppe-cavallaro');
 }
