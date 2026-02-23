@@ -6,12 +6,10 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <nav class="navbar navbar-expand-lg fixed-top bg-dark bg-opacity-75 border-bottom border-light border-opacity-10">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2 " routerLink="/">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-opacity-75 border-bottom border-light border-opacity-10">
+        <div class="container">
           <img src="assets/logo/pizzaLogo.webp" alt="Logo" width="40" height="40" class="rounded-3">
-          <span class="fw-semibold text-light">PizzaInn</span>
-        </a>
+          <span class="fw-semibold text-light ps-3">PizzaInn</span>
 
         <button class="navbar-toggler border-0" type="button"
                 data-bs-toggle="collapse" data-bs-target="#nav"
@@ -25,10 +23,10 @@ import { RouterLink } from '@angular/router';
               <a class="nav-link text-white fw-semibold" routerLink="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-semibold" routerLink="/menu" routerLinkActive="active">Menu</a>
+              <a class="nav-link text-white fw-semibold" routerLink="/menu">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-semibold" routerLink="/cart" routerLinkActive="active">Cart</a>
+              <a class="nav-link text-white fw-semibold" routerLink="/cart">Cart</a>
             </li>
           </ul>
         </div>
