@@ -10,6 +10,7 @@ import { Navbar } from "./features/navbar/navbar";
 
   <div class="bg-dark text-light">
     <router-outlet />
+  </div>
   `,
   styles: [],
 })
